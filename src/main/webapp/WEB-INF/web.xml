@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Servlet1</servlet-name>
+        <servlet-class>silab.nst.dan11.webapp.sevlet.Servlet1</servlet-class>
+        <init-param>
+            <param-name>p1</param-name>
+            <param-value>v1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>p2</param-name>
+            <param-value>v2</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/Servlet1</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
